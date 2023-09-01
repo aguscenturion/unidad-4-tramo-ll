@@ -1,0 +1,38 @@
+### ESTE ARCHIVO NOS SIRVE PARA REALIZAR PETICIONES HTTP A NUESTRO SERVIDOR
+
+
+### PETICION GET - para traer todas las peliculas
+GET http://localhost:3000/peliculas
+
+
+### PETICION GET - traer una pelicula por id
+GET http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+
+### PETICION POST - PARA CREAR UNA NUEVA PELICULA
+POST http://localhost:3000/peliculas
+Content-Type: application/json
+
+{
+    "title": "Avatar 2023",
+    "year": 2023,
+    "director": "Director",
+    "duration": 160,
+    "poster": "https://pbs.twimg.com/media/FmCYkBfWIAQzMLL.jpg:large",
+    "genre": [
+        "Action",
+        "Adventure"
+    ],
+    "rate": 8.5
+}
+
+#### PETICION PUT - PARA ACTUALIZAR UNA PELICULA
+PUT http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "year": 2000
+}
+
+#### PETICION DELETE - PARA ELIMINAR UNA PELICULA
+DELETE http://localhost:3000/peliculas/0a-b32b-220d91689a08
