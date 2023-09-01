@@ -1,0 +1,5 @@
+-------INICIO ARCHIVO 1-------------
+CONTENIDO DEL ARCHIVO TXT nuevoo
+otra linea
+mas lineas
+----------FIN ARCHIVO 1-------------
