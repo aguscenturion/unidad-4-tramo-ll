@@ -46,7 +46,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="formulario">
                             <div class="mb-3">
                                 <label for="inputTitle" class="col-form-label">Title:</label>
                                 <input type="text" class="form-control" id="inputTitle">
@@ -59,12 +59,13 @@
                                 <label for="inputPoster" class="col-form-label">PosterURL:</label>
                                 <input type="url" class="form-control" id="inputPoster">
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary" id="btn-save"></button>
+                            </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" id="btn-save"></button>
-                    </div>
+
                 </div>
             </div>
         </div>
