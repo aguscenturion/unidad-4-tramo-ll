@@ -1,0 +1,26 @@
+### VISTA
+GET http://localhost:3000/tasks
+
+### TRAER TAREAS
+GET http://localhost:3000/api/tasks
+
+### CREAR TAREA
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "cuarta Tarea",
+    "description": "cuarta descripcion",
+    "poster": "https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg"
+}
+
+### MODIFICAR TAREA
+PUT http://localhost:3000/api/tasks/2
+Content-Type: application/json
+
+{
+    "title": "24"
+}
+
+### ELIMINAR
+DELETE http://localhost:3000/api/tasks/3
